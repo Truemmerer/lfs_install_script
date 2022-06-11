@@ -1,0 +1,19 @@
+Installing Fedora Dependencies
+Letzte Prüfung auf abgelaufene Metadaten: vor 0:50:13 am Sa 11 Jun 2022 19:27:04 CEST.
+Das Paket gcc-c++-12.1.1-1.fc36.x86_64 ist bereits installiert.
+Das Paket libstdc++-devel-12.1.1-1.fc36.x86_64 ist bereits installiert.
+Das Paket texinfo-6.8-3.fc36.x86_64 ist bereits installiert.
+Das Paket perl-Class-Inspector-1.36-9.fc36.noarch ist bereits installiert.
+Das Paket perl-Exporter-Tiny-1.002002-7.fc36.noarch ist bereits installiert.
+Das Paket perl-File-ShareDir-1.118-5.fc36.noarch ist bereits installiert.
+Das Paket perl-I18N-Langinfo-0.19-486.fc36.x86_64 ist bereits installiert.
+Das Paket perl-List-MoreUtils-0.430-5.fc36.noarch ist bereits installiert.
+Das Paket perl-Params-Util-1.102-6.fc36.x86_64 ist bereits installiert.
+Das Paket perl-Unicode-EastAsianWidth-12.0-7.fc35.noarch ist bereits installiert.
+Das Paket perl-Unicode-Normalize-1.28-479.fc36.x86_64 ist bereits installiert.
+Das Paket perl-libintl-perl-1.32-5.fc36.x86_64 ist bereits installiert.
+Das Paket perl-locale-1.10-486.fc36.noarch ist bereits installiert.
+Das Paket byacc-2.0.20210808-3.fc36.x86_64 ist bereits installiert.
+Abhängigkeiten sind aufgelöst.
+Nichts zu tun.
+Fertig!
