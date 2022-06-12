@@ -57,6 +57,23 @@ else
     VER=$(uname -r)
 fi
 
+install_step="./install_step_save.txt"
+if [ -f "$install_step_save" ]; then
+    echo "$install_step_save exists."
+    
+    if whiptail --backtitle "$BACKTITLE"  --yesno "It seems like you've already started. Should you continue at the last step?" 10 100 --defaultno; then
+        echo "Yes continue installation"
+        read last_step < "$install_step_save"
+    else
+        echo "No new installation"
+    fi
+
+else 
+    echo "create $install_step_save"
+    echo "0" > "$install_step_save"
+fi
+
+
 
 ## Install Dependencies
 # Fedora Linux 
@@ -91,6 +108,7 @@ if [ $ret_code == 1 ]; then
 else
     echo "Partitioning failed"
     whiptail --backtitle "$BACKTITLE" --title "Partitioning" --msgbox "Error during partitioning."
+    exit 0;
 fi
 
 ## Format partitions
@@ -103,4 +121,5 @@ if [ $ret_code == 1 ]; then
 else
     echo "Formatting of partitions failed"
     whiptail --backtitle "$BACKTITLE" --title "Partitioning" --msgbox "Error during formatting partitions."
+    exit 0;
 fi
